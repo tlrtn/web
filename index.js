@@ -10,7 +10,7 @@ $("#fullpage").fullpage({
       $(".text1").fadeToggle(2000, function(){
         $('.text1').hide();
         $('.text2').fadeToggle(2000);
-        $('.facility').show(2000);
+        $('.facility').fadeToggle(2000);
       });
     }
     else{

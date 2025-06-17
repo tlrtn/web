@@ -1,0 +1,13 @@
+
+-facility_img1,
+-facility_img2,
+-facility_img3,
+https://abilitynet.org.uk/news-blogs/seven-principles-universal-design
+
+-facility_img4,
+-facility_img5,
+unsplash
+
+-facility_img7,
+-facility_img8
+https://doga.no/en/tools/inclusive-design/cases/fukuoka-city-subway/
