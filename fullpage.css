@@ -139,15 +139,17 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left: 260px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent orange transparent transparent;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+    background-color: lightblue;
 }
 .fp-controlArrow.fp-next {
-    right: 42px;
+    right: 80px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent orange;
+    border-color: transparent transparent transparent rgb(255, 255, 255);
+        background-color: lightblue;
 }
 .fp-scrollable {
     overflow: hidden;

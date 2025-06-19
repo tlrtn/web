@@ -19,10 +19,19 @@ $("#fullpage").fullpage({
       // section 4
       $(".text4-1 img").addClass("active");
       $(".text4-2 img").addClass("active");
+      // 원 순차 확장 ->
+      $(".round li img, .aside_wrap .img img").each(function (i) {
+        const that = $(this);
+        setTimeout(() => {
+          that.addClass("active");
+        }, i * 300);
+      });
     } else {
       $(".text4-1 img").removeClass("active");
       $(".text4-2 img").removeClass("active");
+      $(".round li img, .aside_wrap .img img").removeClass("active");
     }
+
   },
 });
 
@@ -83,7 +92,7 @@ $(document).ready(function () {
     "정보의 인지 용이성",
     "오류에 대한 관용성",
     "적은 물리적 노력",
-    "접근과 사용을 위한 충분한 공간"
+    "접근과 사용을 위한 충분한 공간",
   ];
 
   const descriptionsTexts = [
@@ -93,7 +102,7 @@ $(document).ready(function () {
     "고령자와 장애인을 포함한 모두를 고려합니다.",
     "범용적 설계는 사회 통합에 기여합니다.",
     "편리함과 안전함을 모두 갖추는 것이 목표입니다.",
-    "보편성과 효율성을 동시에 추구합니다."
+    "보편성과 효율성을 동시에 추구합니다.",
   ];
 
   // 호버 시 멈춤
@@ -114,13 +123,10 @@ $(document).ready(function () {
     $("#modal").fadeIn();
   });
 
-
-
   // 모달 닫기 (X 버튼)
   $(".close").on("click", function () {
     $("#modal").fadeOut();
   });
-
 
   // 모달 바깥 클릭 시 닫기
   $(window).on("click", function (e) {
